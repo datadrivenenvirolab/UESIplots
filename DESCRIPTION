@@ -1,0 +1,19 @@
+Package: UESIplots
+Type: Package
+Title: Functions for formatting ggplots within the UESI project
+Version: 0.1.0
+Authors@R: c(person("Zhi Yi", "Yeo", email = "zhiyi.yeo@u.yale-nus.edu.sg",
+    role = c("aut", "cre")),
+    person("John", "Brandt", role = "aut"))
+Maintainer: Zhi Yi Yeo, <zhiyi.yeo@u.yale-nus.edu.sg>
+Description: Contains functions that can be called easily while making plots for ggplots within the UESI project.
+Imports: 
+    ggplot2,
+    extrafont,
+    Hmisc
+Suggests:
+    Cairo
+License: NA
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
