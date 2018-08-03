@@ -1,7 +1,7 @@
 # Package for UESI Plots
 This repository hosts the R package with the ggtheme function for plots within the UESI project.
 To use, call 
-`devtools::install_github(datadrivenyale/UESIplots)`
+`devtools::install_github("datadrivenyale/UESIplots")`
 and then load the package into your workspace.
 This package requires 
 `ggplot2`
