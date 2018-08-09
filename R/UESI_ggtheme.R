@@ -29,7 +29,7 @@
 #' @keywords UESI ggplot
 #' @export
 theme_UESI <- function(panel_gridlines = F) {
-  if (panel_gridlines) {
+  if (panel_gridlines == T) {
     ggplot2::theme_bw() +
     ggplot2::theme(panel.grid.major = ggplot2::element_blank(),
                    panel.grid.minor = ggplot2::element_blank(),
