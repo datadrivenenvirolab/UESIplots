@@ -52,7 +52,7 @@ theme_UESI <- function(panel_gridlines = F) {
                    panel.grid.major = element_line(colour="gray", size = 0.25)) +
       scale_y_continuous(breaks = c(0.00, 0.25, 0.50, 0.75, 1.00), expand = c(0,0),
                          labels=c("0.00", "", "0.50", "", "1.00")) +
-      scale_x_continuous(breaks = c(0.00, 0.25, 0.50, 0.75, 1.00), expand = c(0,0)))
+      scale_x_continuous(breaks = c(0.00, 0.25, 0.50, 0.75, 1.00), expand = c(0,0))
     } else {
       ggplot2::theme_bw() +
       ggplot2::theme(panel.grid.major = ggplot2::element_blank(),
