@@ -28,20 +28,46 @@
 #' usage as the "theme" function in ggplot2.
 #' @keywords UESI ggplot
 #' @export
-theme_UESI <- function() {
-  ggplot2::theme_bw() +
+theme_UESI <- function(panel_gridlines = F) {
+  if (panel_gridlines) {
+    ggplot2::theme_bw() +
     ggplot2::theme(panel.grid.major = ggplot2::element_blank(),
-          panel.grid.minor = ggplot2::element_blank(),
-          strip.background = ggplot2::element_blank(),
-          panel.background = ggplot2::element_rect(fill = "white"),
-          panel.border = ggplot2::element_rect(color="grey70", fill = NA),
-          axis.ticks = ggplot2::element_line(color="grey70"),
-          plot.caption = ggplot2::element_text(color="grey60"),
-          plot.margin = ggplot2::unit(c(0.5,0.5,0.5,0.5), "cm"),
-          legend.key = ggplot2::element_rect(fill = "white",colour = NA),
-          legend.position = "bottom",
-          text = ggplot2::element_text(family = "Myriad Pro Light", face = "plain",
-                              size = 12))
+                   panel.grid.minor = ggplot2::element_blank(),
+                   strip.background = ggplot2::element_blank(),
+                   panel.background = ggplot2::element_rect(fill = "white"),
+                   panel.border = ggplot2::element_rect(color="grey70", fill = NA),
+                   axis.ticks = ggplot2::element_line(color="grey70"),
+                   plot.caption = ggplot2::element_text(color="grey60"),
+                   plot.margin = ggplot2::unit(c(0.5,0.5,0.5,0.5), "cm"),
+                   legend.key = ggplot2::element_rect(fill = "white",colour = NA),
+                   legend.position = "bottom",
+                   text = ggplot2::element_text(family = "Myriad Pro Light",
+                                                face = "plain", size = 12)) +
+    ggplot2::theme(rect = element_rect(size = 0.25),
+                   panel.border = element_rect(fill=NULL, size=0.25),
+                   strip.text.x = element_text(angle = 0, hjust = 0),
+                   axis.title.y = element_text(angle = 90),
+                   axis.text.x = element_text(angle = 90),
+                   panel.spacing = unit(1, "lines"),
+                   panel.grid.major = element_line(colour="gray", size = 0.25)) +
+      scale_y_continuous(breaks = c(0.00, 0.25, 0.50, 0.75, 1.00), expand = c(0,0),
+                         labels=c("0.00", "", "0.50", "", "1.00")) +
+      scale_x_continuous(breaks = c(0.00, 0.25, 0.50, 0.75, 1.00), expand = c(0,0)))
+    } else {
+      ggplot2::theme_bw() +
+      ggplot2::theme(panel.grid.major = ggplot2::element_blank(),
+            panel.grid.minor = ggplot2::element_blank(),
+            strip.background = ggplot2::element_blank(),
+            panel.background = ggplot2::element_rect(fill = "white"),
+            panel.border = ggplot2::element_rect(color="grey70", fill = NA),
+            axis.ticks = ggplot2::element_line(color="grey70"),
+            plot.caption = ggplot2::element_text(color="grey60"),
+            plot.margin = ggplot2::unit(c(0.5,0.5,0.5,0.5), "cm"),
+            legend.key = ggplot2::element_rect(fill = "white",colour = NA),
+            legend.position = "bottom",
+            text = ggplot2::element_text(family = "Myriad Pro Light",
+                                         face = "plain", size = 12))
+  }
 }
 
 #' Function for formatting the city names
