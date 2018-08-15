@@ -8,7 +8,7 @@
 # when necessary and thereafter the function can be called for all ggplots
 
 # Setting up the environment
-# setwd("~/Yale-NUS/Data-Driven Yale/urban-epi/src/r/chapter plots")
+# setwd("~/urban-epi/src/r/chapter plots")
 
 # Import font to be used
 # font_import(path = "urban-statistics/Final_Project/fonts",
@@ -50,9 +50,9 @@ theme_UESI <- function(panel_gridlines = F) {
                    axis.text.x = element_text(angle = 90),
                    panel.spacing = unit(1, "lines"),
                    panel.grid.major = element_line(colour="gray", size = 0.25)) +
-      scale_y_continuous(breaks = c(0.00, 0.25, 0.50, 0.75, 1.00), expand = c(0,0),
+      ggplot2::scale_y_continuous(breaks = c(0.00, 0.25, 0.50, 0.75, 1.00), expand = c(0,0),
                          labels=c("0.00", "", "0.50", "", "1.00")) +
-      scale_x_continuous(breaks = c(0.00, 0.25, 0.50, 0.75, 1.00), expand = c(0,0))
+      ggplot2::scale_x_continuous(breaks = c(0.00, 0.25, 0.50, 0.75, 1.00), expand = c(0,0))
     } else {
       ggplot2::theme_bw() +
       ggplot2::theme(panel.grid.major = ggplot2::element_blank(),
@@ -68,20 +68,4 @@ theme_UESI <- function(panel_gridlines = F) {
             text = ggplot2::element_text(family = "Myriad Pro Light",
                                          face = "plain", size = 12))
   }
-}
-
-#' Function for formatting the city names
-#'
-#' Use this function to format City names for plots within the UESI project
-#' @param x A vector of citynames
-#' @return Formatted city names ready for plotting
-#' @export
-format_city_name <- function(x) {
-  x <- Hmisc::capitalize(x)
-  x[x == "Losangeles"] <- "Los Angeles"
-  x[x == "Mexicocity"] <- "Mexico City"
-  x[x == "Newyork"] <- "New York"
-  x[x == "Saopaulo"] <- "Sao Paulo"
-  x[x == "Telaviv"] <- "Tel Aviv"
-  return(x)
 }
