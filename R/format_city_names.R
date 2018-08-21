@@ -5,13 +5,14 @@
 #' @return Formatted city names ready for plotting
 #' @export
 format_city_name <- function(x) {
-  x <- tolower(x)
-  x[x  ==  "losangeles"] <- "Los Angeles"
-  x[x  ==  "mexicocity"] <- "Mexico City"
-  x[x  ==  "mexico"] <- "Mexico City"
-  x[x  ==  "newyork"] <- "New York"
-  x[x  ==  "saopaulo"] <- "Sao Paulo"
-  x[x  ==  "telaviv"] <- "Tel Aviv"
+  x <- tolower(as.character(x))
+  
+  x[x == "losangeles"] <- "Los Angeles"
+  x[x == "mexicocity"] <- "Mexico City"
+  x[x == "mexico"] <- "Mexico City"
+  x[x == "newyork"] <- "New York"
+  x[x == "saopaulo"] <- "Sao Paulo"
+  x[x == "telaviv"] <- "Tel Aviv"
   x[x == "singapore"] <- "Singapore"
   x[x == "london"] <- "London"
   x[x == "paris"] <- "Paris"
@@ -36,6 +37,9 @@ format_city_name <- function(x) {
   x[x == "melbourne"] <- "Melbourne"
   x[x == "montreal"] <- "Montreal"
   x[x == "manila"] <- "Manila"
+  x[x == "lima"] <- "Lima"
+  x[x == "johannesburg"] <- "Johannesburg"
+
   return(x)
 }
 
