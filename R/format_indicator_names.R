@@ -17,7 +17,7 @@ format_indicator_name <- function(x) {
   x[x == "treecapd"] <- "Treecover Deficit"
   x[x == "treeloss"] <- "Treecover Loss"
   x[x == "uhi"] <- "Urban Heat Island"
-  x[x == "watstress"] <- "Surface Water Stress"
+  x[x == "watstress"] <- "Water Stress"
   x[x == "wattreat"] <- "Wastewater Treatment"
 
 
