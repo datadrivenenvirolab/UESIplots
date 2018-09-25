@@ -11,7 +11,7 @@ format_indicator_name <- function(x) {
   x[x == "climpol"] <- "Climate Policy"
   x[x == "no2"] <- "NO2"
   x[x == "pm25"] <- "PM2.5"
-  x[x == "pm25ex"] <- "PM2.5 Exposure"
+  x[x == "pm25ex"] <- "PM2.5 Exceedance"
   x[x == "pubtrans"] <- "Public Transportation"
   x[x == "treecap"] <- "Treecover per Capita"
   x[x == "treecapd"] <- "Treecover Deficit"
