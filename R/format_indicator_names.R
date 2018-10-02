@@ -13,7 +13,7 @@ format_indicator_name <- function(x) {
   x[x == "pm25"] <- "PM2.5"
   x[x == "pm25ex"] <- "PM2.5 Exceedance"
   x[x == "pubtrans"] <- "Proximity to Public Transit"
-  x[x == "transcov"] <- "Public Transportation Coverage"
+  x[x == "transcov"] <- "Public Transit Coverage"
   x[x == "treecap"] <- "Tree Cover per Capita"
   x[x == "treecapd"] <- "Tree Cover Deficit"
   x[x == "treeloss"] <- "Tree Cover Loss"
