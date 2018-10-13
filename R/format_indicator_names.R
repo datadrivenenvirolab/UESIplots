@@ -8,6 +8,7 @@ format_indicator_name <- function(x) {
   x <- tolower(as.character(x))
   x <- gsub ("\\.uesi", "", x)
 
+  #Environmental Indicators
   x[x == "climpol"] <- "Climate Policy"
   x[x == "climate.policy"] <- "Climate Policy"
   x[x == "no2"] <- "NO2"
@@ -21,6 +22,14 @@ format_indicator_name <- function(x) {
   x[x == "uhi"] <- "Urban Heat Island"
   x[x == "watstress"] <- "Water Stress"
   x[x == "wattreat"] <- "Wastewater Treatment"
+
+  #physical indicators
+  x[x == "ndvi"] <- "NDVI"
+  x[x == "ndbi"] <- "NDBI"
+  x[x == "elevation"] <- "Elevation"
+  x[x == "density"] <- "Density"
+  x[x == "treeprop"] <- "Tree Cover Proportion"
+  x[x == "albedo"] <- "Albedo"
 
 
   return(x)
