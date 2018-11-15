@@ -6,7 +6,7 @@
 #' @export
 format_city_name <- function(x) {
   x <- tolower(as.character(x))
-  
+
   x[x == "losangeles"] <- "Los Angeles"
   x[x == "mexicocity"] <- "Mexico City"
   x[x == "mexico"] <- "Mexico City"
@@ -39,6 +39,8 @@ format_city_name <- function(x) {
   x[x == "manila"] <- "Manila"
   x[x == "lima"] <- "Lima"
   x[x == "johannesburg"] <- "Johannesburg"
+  x[x == "buenosaires"] <- "Buenos Aires"
+
 
   return(x)
 }
