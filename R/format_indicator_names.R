@@ -16,9 +16,9 @@ format_indicator_name <- function(x) {
   x[x == "pm25ex"] <- "PM2.5 Exceedance"
   x[x == "pubtrans"] <- "Proximity to Public Transit"
   x[x == "transcov"] <- "Public Transit Coverage"
-  x[x == "treecap"] <- "Treecover per Capita"
-  x[x == "treecapd"] <- "Treecover Deficit"
-  x[x == "treeloss"] <- "Treecover Loss"
+  x[x == "treecap"] <- "Tree Cover per Capita"
+  x[x == "treecapd"] <- "Tree Cover Deficit"
+  x[x == "treeloss"] <- "Tree Cover Loss"
   x[x == "uhi"] <- "Urban Heat Island"
   x[x == "watstress"] <- "Water Stress"
   x[x == "wattreat"] <- "Wastewater Treatment"
@@ -28,7 +28,7 @@ format_indicator_name <- function(x) {
   x[x == "ndbi"] <- "NDBI"
   x[x == "elevation"] <- "Elevation"
   x[x == "density"] <- "Density"
-  x[x == "treeprop"] <- "Treecover Proportion"
+  x[x == "treeprop"] <- "Tree Cover Proportion"
   x[x == "albedo"] <- "Albedo"
 
 
