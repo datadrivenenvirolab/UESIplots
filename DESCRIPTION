@@ -4,12 +4,14 @@ Title: Functions for formatting ggplots within the UESI project
 Version: 0.1.0
 Authors@R: c(person("Zhi Yi", "Yeo", email = "zhiyi.yeo@u.yale-nus.edu.sg",
     role = c("aut", "cre")),
+    person("Andrew", "Feierman", role = "aut"),
     person("John", "Brandt", role = "aut"))
 Maintainer: Zhi Yi Yeo, <zhiyi.yeo@u.yale-nus.edu.sg>
 Description: Contains functions that can be called easily while making plots for ggplots within the UESI project.
 Imports: 
     ggplot2,
     extrafont,
+    extrafontdb,
     Hmisc
 Suggests:
     Cairo
