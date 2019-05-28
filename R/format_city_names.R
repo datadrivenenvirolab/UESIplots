@@ -11,7 +11,7 @@ format_city_name <- function(x) {
   x[x == "mexicocity"] <- "Mexico City"
   x[x == "mexico"] <- "Mexico City"
   x[x == "newyork"] <- "New York"
-  x[x == "saopaulo"] <- "São Paulo"
+  x[x == "saopaulo"] <- "SÃ£o Paulo"
   x[x == "telaviv"] <- "Tel Aviv"
   x[x == "singapore"] <- "Singapore"
   x[x == "london"] <- "London"
