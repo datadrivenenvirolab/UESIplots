@@ -138,7 +138,7 @@ format_city_name <- function(x) {
   x[x == "saintpetersburg"] <- "Saint Petersburg"
   x[x == "saltlakecity"] <- "Salt Lake City"
   x[x == "sanfrancisco"] <- "San Francisco"
-  x[x == "sanjose"] <- "San Jose"
+  x[x == "sanjose"] <- "San José"
   x[x == "sansalvador"] <- "San Salvador"
   x[x == "santiago"] <- "Santiago"
   x[x == "santodomingo"] <- "Santo Domingo"
