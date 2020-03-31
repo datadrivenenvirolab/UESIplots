@@ -22,6 +22,9 @@ format_indicator_name <- function(x) {
   x[x == "uhi"] <- "Urban Heat Island"
   x[x == "watstress"] <- "Water Stress"
   x[x == "wattreat"] <- "Wastewater Treatment"
+  x[x == "co2"] <- "CO2"
+  x[x == "co2min"] <- "CO2 Min"
+  x[x == "co2max"] <- "CO2 Max"
 
   #physical indicators
   x[x == "ndvi"] <- "NDVI"
