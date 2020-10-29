@@ -7,6 +7,7 @@
 format_indicator_name <- function(x) {
   x <- tolower(as.character(x))
   x <- gsub ("\\.uesi", "", x)
+  x <- gsub("\\_mean", "", x)
 
   #Environmental Indicators
   x[x == "climpol"] <- "Climate Policy"
@@ -33,7 +34,8 @@ format_indicator_name <- function(x) {
   x[x == "density"] <- "Density"
   x[x == "treeprop"] <- "Tree Cover Proportion"
   x[x == "albedo"] <- "Albedo"
-
+  x[x == "gdppc"] <- "GDP per capita"
+  x[x == "popdens"] <- "Population density"
 
   return(x)
 }
