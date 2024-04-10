@@ -21,7 +21,7 @@ format_indicator_name <- function(x) {
   x[x == "lc_treecap"] <- "Tree Cover per Capita (ESA)"
   x[x == "treecapd"] <- "Tree Cover Deficit"
   x[x == "treeloss"] <- "Tree Cover Loss"
-  x[x == "uhi"] <- "Surface Urban Heat Island"
+  x[x == "uhieq"] <- "Surface Urban Heat Island"
   x[x == "cuhi_eq"] <- "Canopy Urban Heat Island"
   x[x == "watstress"] <- "Water Stress"
   x[x == "wattreat"] <- "Wastewater Treatment"
